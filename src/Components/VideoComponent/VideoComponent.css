@@ -1,0 +1,70 @@
+.video-background {
+    position: relative;
+    height: 480px;
+    overflow: hidden;
+}
+
+.hero-container-main h1{
+    margin-bottom: 20px;
+}
+  /*   margin: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency 
+    padding: 10px;
+    border-radius: 5px;
+} */
+
+.video-background__video {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.video-background__content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Adjusted to ensure text is visible on black background */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 2rem;
+}
+
+.hero-container-main{
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.hero-container-main p{
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.hero-container button{
+    width: 180px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    background: #dc2f02;
+    cursor: pointer;
+}
+
+.hero-container-main button:active{
+    background: #f3f3f3;
+    color: black;
+}

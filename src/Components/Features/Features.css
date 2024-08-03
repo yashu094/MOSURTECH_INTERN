@@ -1,0 +1,104 @@
+.features-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.features-container hr{
+    border: none;
+    width: 150px;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+    align-items: center;
+    justify-content: center;
+    margin-left: 540px;
+}
+
+.features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.features-box {
+    position: relative;
+    border: 1px solid #000; /* Border to match the example */
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the background image doesn't overflow */
+}
+
+.features-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Set the opacity of the background image */
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+.borrower-box::before {
+    background-image: url('https://cdni.iconscout.com/illustration/premium/thumb/online-loan-approval-5623540-4684138.png?f=webp'); /* Replace with your borrower background image URL */
+    width: 600px;
+}
+
+.investor-box::before {
+    background-image: url('https://media.istockphoto.com/id/1314458685/vector/piggy-bank-happy-african-woman-puts-green-banknotes-in-money-box-save-money-concept.jpg?s=612x612&w=0&k=20&c=aPTkIQRmcChJ_75rsPVAI5CYmj9gWwH99qmPPCagMlA='); /* Replace with your investor background image URL */
+}
+
+.features-box hr{
+     margin-left: 240px;
+     width: 80px;
+}
+
+.features-box h2 {
+    margin-top: 0;
+    position: relative; /* Ensure text stays above the background image */
+    z-index: 1;
+}
+
+.features-box ul {
+    list-style-type: disc;
+    font-size: 19px;
+    padding-left: 50px;
+    position: relative; /* Ensure text stays above the background image */
+    z-index: 1;
+    top: -10px;
+}
+
+.features-box ul li {
+    text-align: left;
+}
+
+.features-box ul li:last-child{
+    list-style: none;
+}
+
+.feature-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 140px;
+  }
+  
+  .feature-button:hover {
+    background-color: white;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+  }

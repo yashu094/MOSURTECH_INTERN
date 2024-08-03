@@ -1,0 +1,30 @@
+.custom-navbar {
+    background-color: aliceblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+.btn{
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn:hover{
+  background-color: white;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+  @media (max-width: 992px) {
+    #basic-navbar-nav
+    {
+        margin-left: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #basic-navbar-nav
+    {
+        margin-left: 20px;
+    }
+  }

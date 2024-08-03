@@ -1,0 +1,85 @@
+.review-heading-container {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  
+  .borrow-reviews-heading {
+    font-size: 2rem;
+    color: #002366;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center; /* Center the title */
+    display: inline-block;
+  }
+  
+  .borrow-reviews-heading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+  }
+  
+  .borrow-reviews-section {
+    padding: 2rem;
+    background-color: white;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden; /* Ensure container handles overflow */
+  }
+  
+  .borrow-review-card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 0px; /* Add space between each card */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  }
+  
+  .borrow-review-card h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .borrow-review-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .borrow-reviews-section {
+      padding: 1rem;
+    }
+  
+    .borrow-reviews-heading {
+      font-size: 2rem;
+    }
+  
+    .borrow-review-card {
+      padding: 0.5rem;
+      margin: 5px; /* Adjust margin for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .borrow-reviews-heading {
+      font-size: 2rem;
+    }
+    .borrow-review-card {
+        margin: 2px; /* Adjust margin for even smaller screens */
+    }
+  
+    .borrow-review-card h3 {
+      font-size: 1rem;
+    }
+  
+    .borrow-review-card p {
+      font-size: 0.875rem;
+    }
+  }
+  

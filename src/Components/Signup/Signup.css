@@ -1,0 +1,107 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.signup-container {
+  background-color: #fff;
+  max-width: 1800px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: #0071FF;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  background-color: #0071FF;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #005DD1;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px #0071FF;
+  border: none;
+}
+
+select {
+  background-color: #fff;
+}
+
+select option {
+  padding: 8px;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+      padding: 20px;
+  }
+
+  input,
+  textarea {
+      padding: 8px;
+  }
+
+  button {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .signup-container {
+      max-width: 90%;
+  }
+}

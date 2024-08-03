@@ -1,0 +1,117 @@
+.terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center align text content */
+  }
+  
+  .terms-list {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
+    text-align: left; /* Align text content to the left */
+  }
+  .apply-section {
+    margin-top: 20px;
+    text-align: center; /* Center align the apply button */
+  }
+  .accept-checkbox {
+    display: block;
+    margin-bottom: 10px;
+  } 
+  .apply-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #dc3545; /* Example button background color */
+    color: #fff; /* Example button text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+.apply-button:hover {
+    background-color: white;
+    border: 1px solid #dc3545;
+    color: #dc3545; /* Example button hover background color */
+  }
+@media (max-width: 768px) {
+    .terms-container {
+      padding: 10px;
+    }
+  
+    .terms-list > li {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .terms-container {
+      padding: 5px;
+    }
+  
+    .terms-list > li {
+      margin-bottom: 10px;
+    }
+  }
+  .terms-list > li {
+    margin-bottom: 20px;
+  }
+  
+  .terms-list > li > ul {
+    list-style-type: disc;
+    margin-top: 10px;
+    padding-left: 20px; /* Indent the nested list content */
+  }
+  
+  .terms-list > li > ul > li {
+    margin-bottom: 5px;
+  }
+  
+  .terms-list strong {
+    color: #333;
+  }
+  
+  .terms-container h1 {
+    margin-top:50px;
+    margin-bottom:25px;
+    position: relative; /* Ensure the pseudo-element is positioned relative to the h1 */
+    display: inline-block; /* Maintain the width of the heading inline */
+    font-size: 2em; /* Example font size */
+    color: #333; /* Example color */
+    text-transform: uppercase; /* Example text transformation */
+    margin-left: 20px; /* Adjust left margin for the heading */
+  }
+  
+  .terms-container h1::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Position at the center of the heading */
+    bottom: -5px; /* Adjust the position of the underline */
+    width: 50%; /* Adjust the width of the underline */
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #ff0000; /* Example underline color */
+    transform: translateX(-50%); /* Center the underline horizontally */
+  }
+/*   
+  @media (max-width: 768px) {
+    .terms-container {
+      padding: 10px;
+    }
+  
+    .terms-list > li {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .terms-container {
+      padding: 5px;
+    }
+  
+    .terms-list > li {
+      margin-bottom: 10px;
+    }
+  }
+   */

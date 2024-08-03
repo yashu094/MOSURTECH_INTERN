@@ -1,0 +1,80 @@
+.Bor-container {
+    background-color: #f8f9fa;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 1, 1, 1);
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 4%;
+}
+
+.Bor-head {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+.Bor-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Bor-label label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.Bor-input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #0071FF;
+    border-radius: 6px;
+    width: 70%;
+    transition: border-color 0.2s ease-in-out;
+}
+ .Bor-input:focus{
+    outline: none;
+    box-shadow: 0 0 10px 1px #0071FF;
+    border: none;
+  }
+  .Bor-btn {
+    background-color: #0071FF;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #0071FF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+   }
+   
+   .Bor-btn span:last-child {
+    display: none;
+   }
+   
+   .Bor-btn:hover {
+    transition: .4s;
+    border: 2px solid #0071FF ;
+    background-color: #fff;
+    color: #0071FF;
+   }
+   
+   .Bor-btn:active {
+    background-color: #87dbd0;
+   }
+
+   @media (max-width: 576px) {
+    .Bor-container {
+        padding: 30px;
+    }
+
+    input {
+        width: 80%;
+    }
+}

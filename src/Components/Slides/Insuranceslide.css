@@ -1,0 +1,57 @@
+.InsuranceSlider{
+  margin-bottom: 50px;
+}
+.image-slider img {
+    border-radius: 10px;
+  }
+  
+  .image-slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    padding: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    height: 500px;
+  }
+  
+  .slide-heading {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .slide-image {
+    width: 100%;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+  }
+  
+  .slide-image:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 1024px) {
+    .slide-heading {
+      font-size: 1em;
+    }
+  
+    /* .slide-image {
+      border-radius: 6px;
+    } */
+  } 
+  
+  @media (max-width: 600px) {
+    .slide-heading {
+      font-size: 0.9em;
+    }
+  .slide{
+    height: auto;
+  }
+    /* .slide-image {
+      border-radius: 4px;
+    } */
+  }
+  

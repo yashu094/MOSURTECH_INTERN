@@ -1,0 +1,39 @@
+/* src/App.css */
+.App {
+    text-align: center;
+  }
+  
+  .retrieve-score {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .retrieve-score h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .retrieve-score form div {
+    margin-bottom: 15px;
+  }
+  
+  .retrieve-score label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .retrieve-score input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .retrieve-score button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

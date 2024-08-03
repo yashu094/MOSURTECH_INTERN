@@ -1,0 +1,81 @@
+.Insurance-a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    
+  }
+  
+  .Insurance-ab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .Insurance-ab h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .Insurance-ab p {
+    font-size: 1em;
+    color: #666;
+    max-width: 600px;
+  }
+  
+  .Insurance-ab img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .Insurance-ab {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .Insurance-ab img {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+  }
+  .Insurance-h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 3px; /* Add some space below the text for the underline */
+  }
+  
+  .Insurance-h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 15%;
+    height: 2px; /* Reduced the height of the underline */
+    background-color: #ff0000;
+    transform: translateX(-50%);
+  }
+  
+  @media (max-width: 768px) {
+    .Insurance-h1 {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Insurance-h1 {
+      font-size: 1.2em;
+    }
+  }
+  

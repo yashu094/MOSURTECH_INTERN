@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inv-container {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    height: 100vh;
+}
+
+.inv-left {
+    padding: 0% 3%;
+    width: 60vw;
+}
+
+.inv-right {
+    margin-right: 3%;
+}
+
+.inv-head {
+    font-size: 3vw;
+    position: relative;
+    margin-bottom: 5%;
+    color: #90c340;
+}
+
+.inv-subhead {
+    font-size: 1.2vw;
+    line-height: 25px;
+    color: grey;
+}
+
+.inv-subhead p {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.inv-heaadone {
+    margin-left: 20%;
+}
+
+.invbtn-head {
+    margin-top: 5%;
+    color: #90c340;
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+.inv-strbtn {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-top: 3%;
+}
+
+.Bor-btn {
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 250px;
+    background-color: #dc3545;
+    padding: 14px 40px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.4s;
+}
+
+.Bor-btn:hover {
+    transition: 0.4s;
+    background-color: white;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.Bor-btn:active {
+    background-color: #87dbd0;
+}
+
+.inv-opt {
+    background-color: aliceblue;
+    width: auto;
+    height: auto;
+}
+
+.inv-opt h1 {
+    font-size: 3vw;
+    color: #24305e;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.inv-features {
+    font-size: 1.5vw;
+    padding: 0;
+    width: 100vw;
+}
+
+ul .inv-features {
+    line-height: 35px;
+    width: 900px;
+    padding-left: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul .inv-features:last-child {
+    padding-bottom: 50px;
+}
+
+.inv-benefits {
+    color: #24305e;
+    width: 98vw;
+    min-height: auto;
+    margin-bottom: 30px;
+}
+
+.invben-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    font-size: 4vw;
+}
+
+.inv-ben {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5%;
+}
+
+.inv-card {
+    width: 330px;
+    height: 350px;
+    margin: 3%;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    transition: 0.2s ease-in-out;
+}
+
+.inv-img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(#e66465, #9198e5);
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.inv-text {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.inv-text .h3 {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.inv-text .p {
+    font-family: 'Lucida Sans', sans-serif;
+    color: #999999;
+    font-size: 13px;
+}
+
+.inv-card:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1200px) {
+    .inv-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .inv-left, .inv-right {
+        width: 90vw;
+        margin: 10px 0;
+        padding: 0 5%;
+    }
+
+    .inv-head, .invbtn-head {
+        font-size: 4vw;
+    }
+
+    .inv-subhead {
+        font-size: 2vw;
+    }
+
+    .Bor-btn {
+        width: 200px;
+    }
+
+    .inv-opt h1 {
+        font-size: 4vw;
+    }
+
+    .inv-features {
+        font-size: 2.5vw;
+        padding-left: 10px ;
+    }
+
+    .invben-head {
+        font-size: 5vw;
+    }
+
+    .inv-ben {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .inv-head, .invbtn-head {
+        font-size: 6vw;
+    }
+
+    .inv-subhead {
+        font-size: 3vw;
+    }
+
+    .Bor-btn {
+        width: 150px;
+    }
+
+    .inv-opt h1 {
+        font-size: 5vw;
+    }
+
+    .inv-features {
+        font-size: 3vw;
+    }
+
+    ul .inv-features{
+        padding: 0;
+        width: 350px;
+    }
+
+    li .inv-features{
+        padding: 0;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .invben-head {
+        font-size: 6vw;
+    }
+
+    .inv-card {
+        width: 90vw;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .inv-img {
+        height: 200px;
+    }
+
+    .inv-text {
+        margin: 10px;
+    }
+
+    .inv-text .h3 {
+        font-size: 20px;
+    }
+
+    .inv-text .p {
+        font-size: 16px;
+    }
+
+    .inv-right{
+        padding: 0;
+    }
+
+    .inv-right img{
+        width: 450px;
+        align-items: left;
+        justify-content: left   ;
+        padding: 0;
+    }
+}

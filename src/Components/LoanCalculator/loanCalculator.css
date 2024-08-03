@@ -1,0 +1,110 @@
+.heading-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .calculator-heading {
+    font-size: 2rem;
+    color: #002366;
+    margin-bottom: 1.5rem;
+    position: relative;
+    text-align: center; /* Center the title */
+    display: inline-block;
+}
+  
+.calculator-heading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    /* margin: 0.5rem auto 0;  */
+}
+  
+  .loan-calculator {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .loan-calculator .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .loan-calculator label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .loan-calculator input,
+  .loan-calculator select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .loan-calculator button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #002366;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .loan-calculator button:hover {
+    background-color: #0044cc;
+  }
+  
+  .loan-calculator h3 {
+    margin-top: 1rem;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .loan-calculator {
+      padding: 1rem;
+    }
+  
+    .calculator-heading {
+      font-size: 2rem;
+    }
+  
+    .loan-calculator input,
+    .loan-calculator select {
+      padding: 0.5rem;
+    }
+  
+    .loan-calculator button {
+      padding: 0.5rem;
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .calculator-heading {
+      font-size: 2rem;
+    }
+  
+    .loan-calculator button {
+      
+      display: block;
+      margin: 0 auto;
+      font-size: 1rem;
+      width: 50%;
+    }
+  
+    .loan-calculator h3 {
+      font-size: 0.875rem;
+    }
+  }
+  
