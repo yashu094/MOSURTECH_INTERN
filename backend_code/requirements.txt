@@ -1,0 +1,15 @@
+sanic
+pymongo
+
+PyJWT
+pytesseract
+numpy==1.25.2
+scikit-learn==1.2.2
+motor
+sanic_cors
+passlib
+bcrypt
+aiofiles
+pillow
+ipython
+pandas
